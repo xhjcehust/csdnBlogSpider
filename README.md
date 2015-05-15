@@ -19,6 +19,4 @@ For any question, just contact me at any time.
 
 mailto: hjxiaohust@gmail.com
 
-QQ:704770933
-
 Any suggestion is welcome!
