@@ -373,7 +373,7 @@ static void epoll_recv_response(spider_work *work, int epollfd, int nworks, int 
 	while (1) {
 		nfds = epoll_wait(epollfd, events, nworks, timeout);
 		if (nfds < 0) {
-			SPIDER_DEBUG(SPIDER_LEVEL_ERROR, "select failed: %s\n", strerror(errno));
+			SPIDER_DEBUG(SPIDER_LEVEL_ERROR, "epoll_wait failed: %s\n", strerror(errno));
 			goto out;
 		} else if (0 == nfds) {
 			SPIDER_DEBUG(SPIDER_LEVEL_INFO, "download timeout, trying to download again\n");
